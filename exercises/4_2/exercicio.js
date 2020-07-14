@@ -4,7 +4,15 @@ console.log(numbers);
 
 for(let i=0; i < numbers.length; i++){
    soma += numbers[i];
+    if(soma>20){
+       console.log("Valores maiores que 20: " +  soma);
+    }
+        else{
+            console.log("Valores menores que 20: " +soma);
+
+        }
 }
+    console.log("\n");
     console.log(soma);
     console.log(soma/numbers.length)
 
