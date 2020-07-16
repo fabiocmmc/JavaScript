@@ -22,3 +22,14 @@ let info = {
         console.log(info.recorrente + " e " +info2.recorrente);   
 
 
+function verificaPalindrome(palavra){
+    let palavra = "arara"
+   
+    if(palavra === palavra.split('').reverse().join('')){
+        console.log(palavra + "e Palindrome")
+    }
+    else{
+        console.log(palavra + " nao e um palindrome");
+    }
+    return palavra;
+}
