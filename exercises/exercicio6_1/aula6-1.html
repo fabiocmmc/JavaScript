@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="aula6-1.css">
+    <title>Formulario Curriculo</title>
+    
+</head>
+<body>
+    <header>
+        <h1>Curriculo</h1>
+    </header>
+    
+    <form action="aula6-1.html" method="POST" >
+        <fieldset>
+            <legend>Dados Pessoais:</legend><br>
+            
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br><br>
+           
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" required="required" name="fname" maxlength="40"><br><br>
+            
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            
+            <label for="CPF">CPF:</label>
+            <input type="text" id="CPF" name="CPF" required="required" maxlength="11"><br><br>
+
+            <label for="cidade">City:</label>
+            <input type="text" id="CPF" name="cidade" required="required" maxlength="28"><br><br>
+
+            <label for="endereco">Adress:</label>
+            <input type="text" id="endereco" name="endereco" required="required" maxlength="200"><br><br>
+
+            <label for="estado">State:</label>
+            <select required="required" name="estados-brasil">
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+            </select><br><br>
+
+            <input type="radio" id="casa" name="casa" value="casa">
+            <label for="casa">CASA</label><br>
+            
+            <input type="radio" id="apto" name="apto" value="apto">
+            <label for="apto">APARTAMENTO</label><br><br>
+            
+            <input type="submit" value="Submit"><br><br>
+
+        </fieldset><br><br>
+
+        <fieldset><br>
+            <legend>Dados Proficionais</legend>
+                       
+            <label for="resume">Resume:</label>
+            <input type="text" id="resume" required="required" name="fname" maxlength="1000"><br><br>
+
+
+        </fieldset>
+
+    </form>
+    
+</body>
+</html>
